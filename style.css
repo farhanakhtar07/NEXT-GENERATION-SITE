@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.landing-page{
+    background-image:linear-gradient(45deg,
+    rgba(87, 156, 99, 0.263),
+    rgba(64, 73, 73, 0.514)), url(./pexels-baskin-creative-studios-1766838.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    font-family: sans-serif;
+}
+/* navigation */
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 3rem;
+    color: whitesmoke;
+
+}
+    .nav-left{
+        display: flex;
+        align-items: center;
+        user-select: none;
+    }
+        .nav-left img{
+            width: 4rem;
+        }
+        .nav-left h1{
+            font-size: 3rem;
+        }
+    .nav-right{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #bea42b;
+    }
+        .nav-right ul{
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+            font-size: 1.3rem;
+            font-weight: 400;
+        }
+        .nav-right li{
+            position: relative;
+            cursor: pointer;
+        }
+        .nav-right li::after{
+            content: "";
+            position: absolute;
+            background-color: rgb(74, 186, 214);
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            transition: all 0.3s ease;
+        }
+        .nav-right li:hover::after{
+            width: 100%;
+        }
+.hero-page{
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 3rem 0;
+    user-select: none;
+}
+    .hero-first{
+        font-size: 2rem;
+        font-weight: 700;
+        padding: 2rem 0;
+    }
+    .hero-main{
+        text-align: center;
+        font-size: 7rem;
+        font-weight: 600;
+        padding: 1rem 0;
+    }
+    
+        .btn button{
+            font-size: 2rem;
+            font-weight: 500;
+            padding: .5rem 1rem;
+            border-radius: 0 1rem 1rem 1rem;
+            transition: all .3s ease;
+            border: none;
+        }
+        .btn button:hover{
+            box-shadow: 5px 5px 5px rgb(14, 93, 119);
+            background-color: #bea42b;
+            color: white;
+
+        }
